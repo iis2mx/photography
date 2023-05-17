@@ -1,0 +1,111 @@
+{% extends 'part/base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+<title>Contact Form 01</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script nonce="6735974b-32b4-47d6-afa0-a3dc9dd193eb">(function(w,d){!function(bg,bh,bi,bj){bg[bi]=bg[bi]||{};bg[bi].executed=[];bg.zaraz={deferred:[],listeners:[]};bg.zaraz.q=[];bg.zaraz._f=function(bk){return function(){var bl=Array.prototype.slice.call(arguments);bg.zaraz.q.push({m:bk,a:bl})}};for(const bm of["track","set","debug"])bg.zaraz[bm]=bg.zaraz._f(bm);bg.zaraz.init=()=>{var bn=bh.getElementsByTagName(bj)[0],bo=bh.createElement(bj),bp=bh.getElementsByTagName("title")[0];bp&&(bg[bi].t=bh.getElementsByTagName("title")[0].text);bg[bi].x=Math.random();bg[bi].w=bg.screen.width;bg[bi].h=bg.screen.height;bg[bi].j=bg.innerHeight;bg[bi].e=bg.innerWidth;bg[bi].l=bg.location.href;bg[bi].r=bh.referrer;bg[bi].k=bg.screen.colorDepth;bg[bi].n=bh.characterSet;bg[bi].o=(new Date).getTimezoneOffset();if(bg.dataLayer)for(const bt of Object.entries(Object.entries(dataLayer).reduce(((bu,bv)=>({...bu[1],...bv[1]})))))zaraz.set(bt[0],bt[1],{scope:"page"});bg[bi].q=[];for(;bg.zaraz.q.length;){const bw=bg.zaraz.q.shift();bg[bi].q.push(bw)}bo.defer=!0;for(const bx of[localStorage,sessionStorage])Object.keys(bx||{}).filter((bz=>bz.startsWith("_zaraz_"))).forEach((by=>{try{bg[bi]["z_"+by.slice(7)]=JSON.parse(bx.getItem(by))}catch{bg[bi]["z_"+by.slice(7)]=bx.getItem(by)}}));bo.referrerPolicy="origin";bo.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(bg[bi])));bn.parentNode.insertBefore(bo,bn)};["complete","interactive"].includes(bh.readyState)?zaraz.init():bg.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<section class="ftco-section">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center mb-5">
+<h2 class="heading-section">Contact Form #01</h2>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-10 col-md-12">
+<div class="wrapper">
+<div class="row no-gutters">
+<div class="col-md-7 d-flex align-items-stretch">
+<div class="contact-wrap w-100 p-md-5 p-4">
+<h3 class="mb-4">Get in touch</h3>
+<div id="form-message-warning" class="mb-4"></div>
+<div id="form-message-success" class="mb-4">
+Your message was sent, thank you!
+</div>
+<form method="POST" id="contactForm" name="contactForm">
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-group">
+<input type="submit" value="Send Message" class="btn btn-primary">
+<div class="submitting"></div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="col-md-5 d-flex align-items-stretch">
+<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+
+<div class="dbox w-100 d-flex align-items-start">
+<div class="icon d-flex align-items-center justify-content-center">
+
+</div>
+<div class="text pl-3">
+
+</div>
+</div>
+<div class="dbox w-100 d-flex align-items-center">
+<div class="icon d-flex align-items-center justify-content-center">
+
+
+</div>
+</div>
+<div class="dbox w-100 d-flex align-items-center">
+
+</div>
+
+
+</div>
+</div>
+<div class="dbox w-100 d-flex align-items-center">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="fa fa-globe"></span>
+</div>
+<div class="text pl-3">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c852f296a7f0e07","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
+       {% endblock %}
